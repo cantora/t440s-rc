@@ -1,0 +1,13 @@
+* <fn> buttons
+  * <ESC>: ibm/hotkey / LEN0068:00
+  * <F1-F7>
+    -button/mute / MUTE
+    -button/volumedown / VOLDN
+    -button/volumeup / VOLUP
+    -button/f20 / F20
+    -video/brightnessdown / BRTDN
+    -video/brightnessup / BRTUP
+    -video/switchmode / VMOD
+  * <F8>: toggle WIFI
+  * <4>: suspend
+  * <s>: coredump terminal program (only on physical terminal?)
