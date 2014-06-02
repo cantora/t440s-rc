@@ -1,0 +1,3 @@
+event=video/switchmode
+action=/etc/acpi/handlers/backlight.sh x
+
