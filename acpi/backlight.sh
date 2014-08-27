@@ -1,7 +1,7 @@
 #!/bin/sh
-bl_dev=/sys/class/backlight/acpi_video0
-max=100
-step=10
+bl_dev=/sys/class/backlight/intel_backlight
+max=$(cat $bl_dev/max_brightness)
+step=$(($max / 10))
 
 bound () {
   if [ $1 -gt $max ]; then
@@ -38,4 +38,3 @@ case $1 in
   +) next_step_up >$bl_dev/brightness;;
   x) toggle >$bl_dev/brightness;;
 esac
-
